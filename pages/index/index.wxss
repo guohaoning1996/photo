@@ -1,0 +1,39 @@
+.viewport {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../image/a.jpg");
+}
+
+.viewport .preview {
+  width: 100%;
+  height: 640rpx;
+  border-bottom: 10rpx solid rgb(184, 78, 78);
+}
+
+.viewport .preview image {
+  width: 100%;
+  height: 100%;
+}
+
+.viewport .result {
+  flex: 1;
+  font-size: 48rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 260rpx;
+}
+
+.viewport .result view {
+  margin: 10rpx;
+}
+
+.viewport .btn {
+  height: 200rpx;
+  padding: 0 100rpx;
+
+}

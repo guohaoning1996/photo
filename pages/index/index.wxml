@@ -1,0 +1,20 @@
+<view class="viewport">
+  <view class="preview">
+    <image src="{{imgPath}}" mode="aspectFit"></image>
+  </view>
+  <view class="result">
+    <block wx:if="{{face}}">
+      <view>性别：{{face.gender >=50?'男':'女'}}</view>
+      <!-- <view>
+        性别:
+        <text wx:if="{{face.gender >= 50}}" style="color:red;  margin-left: 23rpx;">男</text>
+        <text wx:else style="color:blue;  margin-left: 23rpx;">女</text>
+      </view> -->
+      <view>年龄：{{face.age}}</view>
+      <view>颜值：{{face.beauty}}</view>
+    </block>
+  </view>
+  <view class="btn">
+    <button type="primary" bind:tap="upFile">上传照片</button>
+  </view>
+</view>
